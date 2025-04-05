@@ -1,0 +1,514 @@
+.
+├── LICENSE
+├── README.md
+├── fish/
+│   └── prs
+│       ├── README.md
+│       ├── install.sh
+│       └── prs.fish
+└── python/
+    └── prs/
+        ├── README.md
+        ├── prs/
+        │   ├── __init__.py
+        │   ├── __pycache__
+        │   │   ├── __init__.cpython-39.pyc
+        │   │   ├── cli.cpython-39.pyc
+        │   │   ├── config.cpython-39.pyc
+        │   │   └── main.cpython-39.pyc
+        │   ├── cli.py
+        │   ├── config.py
+        │   ├── core/
+        │   │   ├── __init__.py
+        │   │   ├── __pycache__
+        │   │   │   ├── __init__.cpython-39.pyc
+        │   │   │   ├── helpers.cpython-39.pyc
+        │   │   │   ├── models.cpython-39.pyc
+        │   │   │   └── usecases.cpython-39.pyc
+        │   │   ├── helpers.py
+        │   │   ├── models.py
+        │   │   └── usecases.py
+        │   ├── main.py
+        │   ├── utils/
+        │   │   ├── __init__.py
+        │   │   └── formatting.py
+        │   ├── utils.py
+        │   └── vc_tools/
+        │       ├── __init__.py
+        │       ├── __pycache__
+        │       │   └── __init__.cpython-39.pyc
+        │       └── github/
+        │           ├── __init__.py
+        │           ├── __pycache__
+        │           │   ├── __init__.cpython-39.pyc
+        │           │   ├── adapter.cpython-39.pyc
+        │           │   └── client.cpython-39.pyc
+        │           ├── adapter.py
+        │           └── client.py
+        ├── prs.egg-info/
+        │   ├── PKG-INFO
+        │   ├── SOURCES.txt
+        │   ├── dependency_links.txt
+        │   ├── entry_points.txt
+        │   └── top_level.txt
+        └── setup.py
+
+
+
+
+---- ./python/prs/prs/__init__.py ----
+
+
+
+---- ./python/prs/prs/cli.py ----
+import argparse
+import sys
+from prs.config import get, set, all_config
+from prs.core.usecases import list_pull_requests
+
+def run_cli():
+    parser = argparse.ArgumentParser(prog="nprs", description="PRS - Pull Request Status CLI")
+    subparsers = parser.add_subparsers(dest="command")
+
+    # Optional subcommand: 'list'
+    subparsers.add_parser("list", help="List your pull requests")
+
+    # Config commands
+    config_parser = subparsers.add_parser("config", help="Get or set configuration")
+    config_parser.add_argument("action", choices=["get", "set", "all"])
+    config_parser.add_argument("key", nargs="?", help="Ex: git.username")
+    config_parser.add_argument("value", nargs="?", help="Value to set (used with 'set')")
+
+    # Parse args
+    args = parser.parse_args()
+
+    # Default action: if no subcommand given, run 'list'
+    if args.command is None or args.command == "list":
+        list_pull_requests()
+
+    if args.command == "config":
+        if args.action == "get":
+            if not args.key:
+                print("You must provide a key. Example: git.username")
+                sys.exit(1)
+            section, key = args.key.split(".")
+            print(get(section, key))
+
+        elif args.action == "set":
+            if not args.key or not args.value:
+                print("Usage: nprs config set git.username yourName")
+                sys.exit(1)
+            section, key = args.key.split(".")
+            set(section, key, args.value)
+            print(f"Set {section}.{key} = {args.value}")
+
+        elif args.action == "all":
+            for section, items in all_config().items():
+                print(f"[{section}]")
+                for key, value in items.items():
+                    print(f"{key} = {value}")
+                print()
+        return
+
+
+
+
+
+
+---- ./python/prs/prs/config.py ----
+import configparser
+import os
+from pathlib import Path
+
+CONFIG_PATH = Path.home() / ".prsconfig"
+
+_config = configparser.ConfigParser()
+
+# Cria config inicial se não existir
+if not CONFIG_PATH.exists():
+    CONFIG_PATH.write_text("[core]\nrepo = \nusername = \n")
+
+_config.read(CONFIG_PATH)
+
+
+def get(section: str, key: str, fallback: str = "") -> str:
+    return _config.get(section, key, fallback=fallback)
+
+
+def set(section: str, key: str, value: str) -> None:
+    if not _config.has_section(section):
+        _config.add_section(section)
+    _config.set(section, key, value)
+    with open(CONFIG_PATH, "w") as configfile:
+        _config.write(configfile)
+
+
+def all_config() -> dict:
+    return {s: dict(_config.items(s)) for s in _config.sections()}
+
+
+
+
+---- ./python/prs/prs/core/__init__.py ----
+
+
+---- ./python/prs/prs/core/helpers.py ----
+from prs.config import get
+import subprocess
+import json
+
+def resolve_owner():
+    """
+    Determines who is the 'owner' of the repository according to the config:
+    - if 'username' => use git.username
+    - if 'org_name' => use git-org.org_name
+    - otherwise => use literal value
+    """
+    upstream_config = get("git", "upstream")  # ex: 'username' or 'org_name' or 'whatever'
+    user_conf = get("git", "username")
+    org_conf = get("git-org", "org_name")
+
+    if upstream_config == "username":
+        return user_conf
+    elif upstream_config == "org_name":
+        return org_conf
+    else:
+        return upstream_config
+
+
+def read_authors():
+    authors_str = get("pr-info", "authors", fallback="")
+
+    if not authors_str.strip():
+        # fallback to the git.username config
+        return [get("git", "username")]
+    else:
+        # ex: "user-1, user-2, user-3"
+        authors_list = authors_str.split(",")
+        # clean up spaces
+        return [a.strip() for a in authors_list if a.strip()]
+
+
+
+
+---- ./python/prs/prs/core/models.py ----
+class PullRequest:
+    """
+    Domain model for a Pull Request.
+    """
+
+    def __init__(self, id: int, title: str, author: str, labels: list[str],
+                 checks: list[dict], reviews: list[dict], url: str,
+                 branch: str, is_draft: bool):
+        self.id = id
+        self.title = title
+        self.author = author
+        self.labels = labels
+        self.checks = checks
+        self.reviews = reviews
+        self.url = url
+        self.branch = branch
+        self.is_draft = is_draft
+
+        # For internal usage, e.g., 'authored', 'team', 'review_requested'
+        self.source = None
+
+    def summary(self) -> str:
+        return f"[#{self.id}] {self.title} by {self.author}"
+
+
+
+
+---- ./python/prs/prs/core/usecases.py ----
+from prs.config import get
+from prs.vc_tools.github.client import list_pull_request_ids, get_pull_request_details
+from prs.vc_tools.github.adapter import to_model
+
+def list_pull_requests():
+    # Example usage of config
+    username = get("git", "username")
+    repo_name = get("git", "repo_name")
+
+    # Build filters
+    filters = {
+        "author": username,
+        "state": "open"
+    }
+
+    # 1) Get minimal info first
+    pr_refs = list_pull_request_ids(filters)
+    all_prs = []
+
+    # 2) Then fetch each PR in detail
+    for (pr_id, source_tag) in pr_refs:
+        raw = get_pull_request_details(pr_id)
+        pr_model = to_model(raw)
+        pr_model.source = source_tag
+        all_prs.append(pr_model)
+
+    # 3) Display
+    print(f"Found {len(all_prs)} PRs for '{username}' in repo '{repo_name}'.")
+    for pr in all_prs:
+        print(pr.summary())
+
+
+
+
+---- ./python/prs/prs/main.py ----
+from prs.cli import run_cli
+
+def main():
+    run_cli()
+
+
+
+
+---- ./python/prs/prs/utils/__init__.py ----
+
+
+
+
+---- ./python/prs/prs/utils/formatting.py ----
+
+
+
+
+---- ./python/prs/prs/utils.py ----
+
+
+
+
+---- ./python/prs/prs/vc_tools/__init__.py ----
+
+
+
+
+---- ./python/prs/prs/vc_tools/github/__init__.py ----
+
+
+
+
+---- ./python/prs/prs/vc_tools/github/adapter.py ----
+from prs.core.models import PullRequest
+
+def to_model(pr_json: dict) -> PullRequest:
+    """
+    Transform the raw JSON from get_pull_request_details into a PullRequest model.
+    """
+    pr_id = pr_json.get("number", 0)
+    title = pr_json.get("title", "")
+    author = pr_json.get("author", {}).get("login", "")
+    labels = [lbl.get("name", "") for lbl in pr_json.get("labels", [])]
+    checks_raw = pr_json.get("statusCheckRollup", [])
+    reviews_raw = pr_json.get("reviews", [])
+    url = pr_json.get("url", "")
+    branch = pr_json.get("headRefName", "")
+    is_draft = pr_json.get("isDraft", False)
+
+    return PullRequest(
+        id=pr_id,
+        title=title,
+        author=author,
+        labels=labels,
+        checks=checks_raw,
+        reviews=reviews_raw,
+        url=url,
+        branch=branch,
+        is_draft=is_draft
+    )
+
+
+
+
+---- ./python/prs/prs/vc_tools/github/client.py ----
+from prs.config import get
+from prs.core.helpers import read_authors, resolve_owner
+import subprocess
+import json
+
+def list_pr_ids_by_authors():
+    """
+    Reads authors from the config (or fallback),
+    fetches all PRs, filters locally,
+    and returns a list of (number, 'authored').
+    """
+    authors = read_authors()
+    raw_prs = list_prs_all(authors)
+    result = []
+    for pr in raw_prs:
+        pr_number = pr.get("number")
+        if pr_number:
+            result.append((pr_number, "authored"))
+    return result
+
+def list_prs_all(authors=None):
+    """
+    Returns a list of dictionaries with raw info of all PRs in the repository.
+    If authors != None, filters locally only the PRs of this/these author(s).
+    """
+    if authors is None:
+        authors = []
+
+    owner = resolve_owner()
+    repo_name = get("git", "repo_name")
+
+    gh_args = [
+        "gh", "api",
+        f"repos/{owner}/{repo_name}/pulls",
+        "--paginate --author rpereira-anchor",
+    ]
+
+    try:
+        output = subprocess.check_output(gh_args, text=True)
+        data = json.loads(output)  # list of PRs
+    except subprocess.CalledProcessError as e:
+        print("Error calling gh api:", e)
+        return []
+
+    if len(authors) == 0:
+        return data
+    else:
+        filtered = []
+        for pr in data:
+            if pr.get("user", {}).get("login") in authors:
+                filtered.append(pr)
+        return filtered
+
+def list_pull_request_ids(filters: dict) -> list[tuple[int, str]]:
+    """
+    Uses 'gh pr list' with certain filters.
+    Returns a list of (pr_id, source_tag).
+    'source_tag' can be 'authored', 'team', 'review_requested', etc.
+    """
+    # Example: filters might be {"author": "myUser", "state": "open"}
+    # Construct the CLI args for 'gh pr list'
+    gh_args = ["gh", "pr", "list", "--json", "number"]
+
+    author = filters.get("author")
+    if author:
+        gh_args += ["--author", author]
+
+    state = filters.get("state")
+    if state:
+        gh_args += ["--state", state]
+
+    # others like: base branch, label, search, etc.
+
+    # Run subprocess
+    try:
+        output = subprocess.check_output(gh_args, text=True)
+        data = json.loads(output)
+        # data is a list of PR objects (e.g. [{"number": 123}, ...])
+    except subprocess.CalledProcessError as e:
+        print("Error calling gh:", e)
+        return []
+
+    # Example: assume all are "authored"
+    result = []
+    for item in data:
+        number = item.get("number")
+        if number is not None:
+            result.append((number, "authored"))
+    return result
+
+def get_pull_request_details(pr_id: int) -> dict:
+    """
+    Call 'gh pr view <pr_id>' to get the full JSON details.
+    Return the raw JSON as a dictionary.
+    """
+    gh_args = [
+        "gh",
+        "pr",
+        "view",
+        str(pr_id),
+        "--json", "number,title,author,labels,statusCheckRollup,reviews,url,headRefName,isDraft"
+    ]
+    try:
+        output = subprocess.check_output(gh_args, text=True)
+        data = json.loads(output)
+        return data
+    except subprocess.CalledProcessError as e:
+        print("Error fetching details for PR #", pr_id, e)
+        return {}
+
+
+
+---- ./python/prs/prs.egg-info/dependency_links.txt ----
+
+
+
+
+
+---- ./python/prs/prs.egg-info/entry_points.txt ----
+[console_scripts]
+nprs = prs.main:main
+
+
+
+
+
+---- ./python/prs/prs.egg-info/PKG-INFO ----
+Metadata-Version: 1.0
+Name: prs
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+
+
+
+
+---- ./python/prs/prs.egg-info/SOURCES.txt ----
+README.md
+setup.py
+prs/__init__.py
+prs/cli.py
+prs/config.py
+prs/main.py
+prs/utils.py
+prs.egg-info/PKG-INFO
+prs.egg-info/SOURCES.txt
+prs.egg-info/dependency_links.txt
+prs.egg-info/entry_points.txt
+prs.egg-info/top_level.txt
+prs/core/__init__.py
+prs/core/helpers.py
+prs/core/models.py
+prs/core/usecases.py
+prs/utils/__init__.py
+prs/utils/formatting.py
+prs/vc_tools/__init__.py
+prs/vc_tools/github/__init__.py
+prs/vc_tools/github/adapter.py
+prs/vc_tools/github/client.py
+
+
+
+---- ./python/prs/prs.egg-info/top_level.txt ----
+prs
+
+
+
+
+---- ./python/prs/README.md ----
+
+
+
+
+---- ./python/prs/setup.py ----
+from setuptools import setup, find_packages
+
+setup(
+    name="prs",
+    version="0.1.0",
+    packages=find_packages(),
+    entry_points={
+        "console_scripts": [
+            "nprs=prs.main:main",
+        ],
+    },
+)

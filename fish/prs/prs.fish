@@ -452,3 +452,8 @@ function prs
       echo -e (set_color brblack)"There are "(set_color normal)"$draft_number"(set_color brblack)" PRs are drafts. `-d` to show them"(set_color normal)
   end
 end
+
+# list of users from team:
+#             gh api orgs/anchorlabsinc/teams/frontend/members --paginate --jq '.[].login' | paste -sd'|' - | sed 's/^/author:/;s/|/ OR author:/g'
+# get PRs from team:
+#             gh api repos/anchorlabsinc/anchorage/pulls --paginate --jq '.[] | select(.user.login == "palma-anchor" or .user.login == "rpereira-anchor") | {number,user: .user.login}'

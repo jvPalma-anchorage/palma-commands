@@ -1,0 +1,3 @@
+[console_scripts]
+nprs = prs.main:main
+
