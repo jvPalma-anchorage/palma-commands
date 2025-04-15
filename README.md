@@ -33,7 +33,7 @@ PRS is a Python-based command-line utility that helps you quickly inspect your o
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-user/palma-commands.git
+   git clone https://github.com/jvPalma/palma-commands
    ```
 
 2. **Build and Install PRS:**
@@ -47,7 +47,27 @@ PRS is a Python-based command-line utility that helps you quickly inspect your o
    # you may need to source ~/.bashrc to index the new binary, or, close and open a new one
    ```
 
-3. **Run the Tool from Anywhere:**
+3. **Add your configs**
+
+  ```bash
+nprs config set git.repo_name "anchorage"
+nprs config set git.username "jvPalma-anchorage"
+nprs config set git.origin "username" #   `username` | `org_name` | string
+nprs config set git.upstream "org_name" # `username` | `org_name` | string
+
+nprs config set git-org.org_name "anchorlabsinc"
+
+nprs config set pr-info.pr_url "normal" #   `none` | `normal`
+nprs config set pr-info.branch "none"  #    `none` | `normal`
+nprs config set pr-info.author "normal" #   `none` | `normal`
+
+nprs config set pr-info.checks "short" #    `none` | `short` | `normal` | `long`
+nprs config set pr-info.reviews "short" #   `none` | `short` | `normal` | `long`
+nprs config set pr-info.labels "short" #    `none` | `short` | `normal` | `long`
+
+  ```
+   
+4. **Run the Tool from Anywhere:**
 
    ```bash
    prs --help
