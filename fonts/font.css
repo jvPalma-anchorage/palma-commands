@@ -1,0 +1,30 @@
+@import url("./nerd-fonts.css");
+
+@font-face {
+  font-family: "Ubuntu Mono Nerd Font";
+  src: url("UbuntuMonoNerdFont-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UbuntuMonoNerd";
+  src: url("UbuntuMonoNerdFont-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UbuntuMonoNerd Mono";
+  src: url("UbuntuMonoNerdFontMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "UbuntuMonoNerd Propo";
+  src: url("UbuntuMonoNerdFontPropo-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+x-row {
+  text-rendering: optimizeLegibility;
+  font-variant-ligatures: normal;
+}
