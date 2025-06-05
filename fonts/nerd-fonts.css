@@ -2,112 +2,112 @@
 /* JetBrains Mono Nerd Font - Standard */
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-Thin.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-ThinItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-ExtraLight.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-ExtraLightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-Light.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-LightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-Italic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-Medium.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-MediumItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-SemiBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-SemiBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-Bold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-BoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-ExtraBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFont-ExtraBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFont-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
@@ -115,112 +115,112 @@
 /* JetBrains Mono Nerd Font Mono - Monospace */
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Thin.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ThinItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ExtraLight.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ExtraLightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Light.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-LightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Regular.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Italic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Medium.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-MediumItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-SemiBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-SemiBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Bold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-BoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ExtraBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ExtraBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontMono-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
@@ -228,112 +228,112 @@
 /* JetBrains Mono Nerd Font Proportional */
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Thin.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ThinItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ExtraLight.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ExtraLightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Light.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-LightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Regular.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Italic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Medium.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-MediumItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-SemiBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-SemiBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Bold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-BoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ExtraBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ExtraBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNerdFontPropo-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
@@ -341,112 +341,112 @@
 /* JetBrains Mono Nerd Font No Ligatures - Standard */
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Thin.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ThinItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ExtraLight.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ExtraLightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Light.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-LightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Regular.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Italic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Medium.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-MediumItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-SemiBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-SemiBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Bold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-BoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ExtraBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ExtraBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFont-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
@@ -454,112 +454,112 @@
 /* JetBrains Mono Nerd Font No Ligatures Mono */
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Thin.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ThinItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ExtraLight.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ExtraLightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Light.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-LightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Regular.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Italic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Medium.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-MediumItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-SemiBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-SemiBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Bold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-BoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ExtraBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Mono';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ExtraBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontMono-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
@@ -567,112 +567,112 @@
 /* JetBrains Mono Nerd Font No Ligatures Proportional */
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Thin.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ThinItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ExtraLight.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ExtraLight.ttf') format('truetype');
     font-weight: 200;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ExtraLightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ExtraLightItalic.ttf') format('truetype');
     font-weight: 200;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Light.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-LightItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Regular.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Italic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Medium.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Medium.ttf') format('truetype');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-MediumItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-MediumItalic.ttf') format('truetype');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-SemiBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-SemiBold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-SemiBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-SemiBoldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Bold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-BoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ExtraBold.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ExtraBold.ttf') format('truetype');
     font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'JetBrains Mono Nerd Font NL Propo';
-    src: url('./JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ExtraBoldItalic.ttf') format('truetype');
+    src: url('https://raw.githubusercontent.com/jvPalma-anchorage/palma-commands/refs/heads/master/fonts/JetbrainsNerdFonts/JetBrainsMonoNLNerdFontPropo-ExtraBoldItalic.ttf') format('truetype');
     font-weight: 800;
     font-style: italic;
 }
